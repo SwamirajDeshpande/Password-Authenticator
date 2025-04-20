@@ -22,7 +22,7 @@ public class Password_Authentication {
                 if (!user_password.equals(password)) {
                     attempts++;
                     if (attempts >= 3) {
-                        System.out.println("Too many failed attempts!! Please try after 10 seconds");
+                        System.out.println("The Device is locked. Please try after 10 seconds");
                         Thread.sleep(10000); 
                         attempts = 0; 
                     } else {
